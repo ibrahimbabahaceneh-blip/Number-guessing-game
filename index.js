@@ -33,3 +33,12 @@ Submitbtn.onclick = function(){
         countH.textContent = `You tried ${count} time/s`;
     }
 }
+function restart(){
+    randNum = Math.floor(Math.random() * 100 + 1);
+    hint.textContent = 'we are waiting...'
+    count = 0
+    countH.textContent = `You did it in ${count} time/s`
+    resultmessage.textContent = `we are waiting...`
+    document.getElementById("guess").value = ""
+    Submitbtn.disabled = false
+}
